@@ -236,7 +236,7 @@ export const food_list = [
     food_image: food_17,
     food_price: 14,
     food_desc: "エビとタマリンドの酸味が効いたベトナム風スープ。",
-    food_category: "スープ・煮込み",
+    food_category: "スープ",
   },
   {
     food_id: 18,
@@ -244,7 +244,7 @@ export const food_list = [
     food_image: food_18,
     food_price: 12,
     food_desc: "香辛料たっぷりの柔らかい牛肉を煮込んだ濃厚シチュー。",
-    food_category: "スープ・煮込み",
+    food_category: "スープ",
   },
   {
     food_id: 19,
@@ -252,7 +252,7 @@ export const food_list = [
     food_image: food_19,
     food_price: 20,
     food_desc: "白身魚を使った優しい味わいのベトナム風お粥。",
-    food_category: "スープ・煮込み",
+    food_category: "スープ",
   },
   {
     food_id: 20,
@@ -260,7 +260,7 @@ export const food_list = [
     food_image: food_20,
     food_price: 15,
     food_desc: "カニ肉と卵を使ったとろみのあるベトナム風スープ。",
-    food_category: "スープ・煮込み",
+    food_category: "スープ",
   },
   {
     food_id: 21,
