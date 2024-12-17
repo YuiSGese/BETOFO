@@ -3,6 +3,11 @@
   top: 0; /* Khoảng cách từ trên cùng */
   z-index: 1000; /* Đảm bảo navbar nằm trên các phần tử khác */
   background-color: white; /* Màu nền để che nội dung phía dưới khi dính */
+}
+.navbar-container {
+  width: 80%;
+  margin: auto;
+  padding: 6px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +77,7 @@
 
   .navbar-menu {
     gap: 20px;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .navbar-right {
@@ -80,7 +85,7 @@
   }
 
   .navbar-right img {
-    width: 22px;
+    width: 25px;
   }
 
   .navbar-right button {
@@ -90,26 +95,12 @@
 
 @media (max-width: 900px) {
   .navbar-menu {
-    gap: 15px;
-    font-size: 16px;
-  }
-
-  .navbar-right {
-    gap: 20px;
-  }
-
-  .navbar-right img {
-    width: 20px;
-  }
-
-  .navbar-right button {
-    font-size: 15px;
-    padding: 7px 20px;
+    display: none;
   }
 }
 
-@media (max-width: 850px) {
-  .navbar-menu {
-    display: none;
+@media (max-width: 750px) {
+  .navbar .logo {
+    width: 70px;
   }
 }

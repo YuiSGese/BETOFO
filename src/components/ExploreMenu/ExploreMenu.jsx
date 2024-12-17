@@ -6,7 +6,7 @@ const ExploreMenu = ({ category, setCategory }) => {
   const { menu_list } = useContext(StoreContext);
 
   return (
-    <div className="explore-menu" id="explore-menu">
+    <div className="explore-menu " id="explore-menu">
       <div className="explore-menu-content">
         <h2>メニューを探索</h2>
         <p className="explore-menu-text">
