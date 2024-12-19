@@ -18,7 +18,9 @@ const Header = () => {
           ベトナム <br /> 料理なら
         </h2>
         <h1>BETOFO</h1>
-        <button>View Menu</button>
+        <a href="#explore-menu">
+          <button>View Menu</button>
+        </a>
       </div>
     </div>
   );

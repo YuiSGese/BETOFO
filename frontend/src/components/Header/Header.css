@@ -13,8 +13,8 @@
   align-items: start;
   gap: 1.5vw;
   max-width: 50%;
-  bottom: 1vw;
-  left: 6vw;
+  bottom: -1vw;
+  left: 15vw;
   animation: fadeIn 3s;
 }
 .header-contents h2 {

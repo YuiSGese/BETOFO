@@ -7,14 +7,25 @@ import Cart from "./pages/Cart/Cart";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import MyOrders from "./pages/MyOrders/MyOrders";
+import Header from "./components/Header/Header";
+
+import { useLocation } from "react-router-dom";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
+  const location = useLocation();
+
+  // Danh sách các trang không muốn hiển thị Header
+  const noHeaderRoutes = ["/cart", "/order", "/myorder"];
 
   return (
     <>
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <Navbar setShowLogin={setShowLogin} />
+
+      {/* Chỉ hiển thị Header nếu không nằm trong noHeaderRoutes */}
+      {!noHeaderRoutes.includes(location.pathname) && <Header />}
+
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
