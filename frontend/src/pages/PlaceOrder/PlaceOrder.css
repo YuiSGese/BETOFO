@@ -1,0 +1,66 @@
+.place-order {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 50px 0;
+  width: 100%;
+}
+.place-order-left,
+.place-order-right {
+  width: 100%; /* Chia đều không gian cho 2 phần */
+  max-width: none; /* Loại bỏ max-width giới hạn */
+}
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline-color: tomato;
+}
+.place-order-left .multi-field {
+  display: flex;
+  gap: 10px;
+}
+.cart-total h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.payment-options {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid tomato;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.payment-options button {
+  border: none;
+  background-color: tomato;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .place-order {
+    flex-direction: column;
+  }
+}
