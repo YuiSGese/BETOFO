@@ -44,4 +44,28 @@ const LoginPopup = ({ setShowLogin }) => {
     </div>
   );
 };
+// update
+const handleFormSubmit = () => {
+  const endpoint = currState === "Sign Up" ? "signup.php" : "login.php";
+  const data = {
+    name:
+      currState === "Sign Up"
+        ? document.querySelector("input[type='text']").value
+        : null,
+    email: document.querySelector("input[type='email']").value,
+    password: document.querySelector("input[type='password']").value,
+  };
+
+  fetch(`http://localhost:8888/backend/${endpoint}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => alert(data.message))
+    .catch((error) => console.error("Error:", error));
+};
+<button onClick={handleFormSubmit}>
+  {currState === "Login" ? "Login" : "Create account"}
+</button>;
 export default LoginPopup;
